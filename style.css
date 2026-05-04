@@ -6,3 +6,9 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  min-height: 100vh;
+  background: url("./assets/background.jpg") center/cover fixed no-repeat;
+}
+
+
