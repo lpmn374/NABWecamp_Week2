@@ -14,30 +14,42 @@
         <form action="#">
             <div class="amount">
                 <p>Enter Amount</p>
-                <input type="text" value="1">
-            </div>
+                <input type="text" value="1" class="enter-amount">
+            </div>-
             <div class="drop-list">
                 <div class="from">
                     <p>From</p>
-                    <div class="select-box">
-                        <select></select>
+                    <div class="from-drop-list">
+                        <select id="from-select">
+                            <option value="aud">AUD - Australian Dollar </option>
+                            <option value="eur">EUR - Euro </option>
+                            <option value="vnd">VND - Vietnam Dong </option>
+                            <option value="usd" selected>USD - US Dollar </option>
+                        </select>
                     </div>
                 </div>
                 <div class="icon"><i class="fas fa-exchange-alt"></i></div>
                 <div class="to">
                     <p>To</p>
-                    <div class="select-box">
-                        <select></select>
+                    <div class="to-drop-list">
+                        <select id="to-select">
+                            <option value="aud">AUD - Australian Dollar </option>
+                            <option value="eur">EUR - Euro </option>
+                            <option value="vnd" selected>VND - Vietnam Dong </option>
+                            <option value="usd">USD - US Dollar </option>
+                        </select>
                     </div>
                 </div>
             </div>
             <div class="exchange-rate">Getting Exchange Rate...</div>
-            <button>Get Exchange</button>
+            <button id="get-exchange">Get Exchange</button>
             <br>
    
-        
+        -
         </form>
     </div>
-    
+
+    <!--Nối với file js-->>
+    <script src="script.js"></script>
 </body>
 </html>
