@@ -18,12 +18,12 @@
       <form action="#">
         <div class="amount">
           <p>Enter Amount</p>
-          <input type="text" value="1" class="enter-amount"/>
+          <input type="number" value="1" class="enter-amount" min="0" step="any" />
         </div>
         <div class="drop-list">
           <div class="from">
             <p>From</p>
-            <div class="from-drop-list">
+            <div class="from-drop-list select-box">
               <img class="flag-icon" src="assets/us.svg" alt="USD flag" />
               <select id="from-select">
                 <option value="usd" data-flag="assets/us.svg" selected>USD</option>
@@ -36,7 +36,7 @@
           <div class="icon"><i class="fas fa-exchange-alt"></i></div>
           <div class="to">
             <p>To</p>
-            <div class="to-drop-list">
+            <div class="to-drop-list select-box">
               <img class="flag-icon" src="assets/vn.png" alt="VND flag" />
               <select id="to-select">
                 <option value="usd" data-flag="assets/us.svg">USD</option>
@@ -47,15 +47,12 @@
             </div>
           </div>
         </div>
-        <button>Get Exchange</button>
+        <button id="get-exchange" type="submit">Get Exchange</button>
         <div class="amount">
           <p>Converted Amount</p>
-          <input type="text" value="" />
+          <input type="text" class="converted-amount" value="" readonly />
         </div>
       </form>
     </div>
-
-    <!--Nối với file js-->>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
